@@ -140,6 +140,30 @@
       color: var(--text-muted);
       margin-top: 2rem;
     }
+        .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
+      .profile-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .links {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -147,14 +171,19 @@
   <div class="container">
     <!-- HEADER / PROFILE -->
     <header>
-      <h1>Mahamad Sayab Miya</h1>
-      <div class="subtitle">PhD Student • Entomology</div>
-      <p>I am interested in insect-plant genomics and phylogenetic comparative methods.</p>
-      <div class="links">
-        <a href="https://github.com" target="_blank">GitHub</a>
-        <a href="https://google.com" target="_blank">Google Scholar</a>
-        <a href="mailto:your.email@university.edu">Email</a>
-        <a href="#">CV (PDF)</a>
+      <div class="profile-header">
+        <img src="Miya.jpg" alt="Mahamad Sayab Miya" class="profile-pic">
+        <div>
+          <h1>Mahamad Sayab Miya</h1>
+          <div class="subtitle">PhD Student • Entomology</div>
+          <p>I am interested in insect-plant genomics and phylogenetic comparative methods.</p>
+          <div class="links">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://google.com" target="_blank">Google Scholar</a>
+            <a href="mailto:your.email@university.edu">Email</a>
+            <a href="#">CV (PDF)</a>
+          </div>
+        </div>
       </div>
     </header>
 
